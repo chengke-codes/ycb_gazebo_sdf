@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="032_knife">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.1222937000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.8664700000e-03 -7.6711000000e-04  4.0592080000e-02 -->
+        <pose>  1.8664700000e-03 -7.6711000000e-04  4.0592080000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  5.1228831335e-04 </ixx>
+          <ixy> -3.0134848914e-07 </ixy>
+          <ixz> -6.8970001654e-06 </ixz>
+          <iyy>  5.0352956332e-04 </iyy>
+          <iyz>  1.9716121289e-05 </iyz>
+          <izz>  4.5338734219e-05 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://032_knife/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://032_knife/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="011_banana">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.3100019800e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  8.8230000000e-03 -1.1567100000e-03  1.6870460000e-02 -->
+        <pose>  8.8230000000e-03 -1.1567100000e-03  1.6870460000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  7.4064434049e-04 </ixx>
+          <ixy> -8.4527198371e-04 </ixy>
+          <ixz>  8.7847686607e-06 </ixz>
+          <iyy>  1.8065560052e-03 </iyy>
+          <iyz> -4.3006759674e-07 </iyz>
+          <izz>  2.3241962542e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://011_banana/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://011_banana/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

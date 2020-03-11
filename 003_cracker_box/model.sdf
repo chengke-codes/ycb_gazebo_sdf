@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="003_cracker_box">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.3596750490e-03 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  2.2210140000e-02 -1.3761520000e-02  1.1867801000e-01 -->
+        <pose>  2.2210140000e-02 -1.3761520000e-02  1.1867801000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  6.3119774188e-03 </ixx>
+          <ixy> -2.8197854390e-04 </ixy>
+          <ixz> -9.1311669881e-05 </ixz>
+          <iyy>  4.6395874528e-03 </iyy>
+          <iyz>  1.5964535081e-05 </iyz>
+          <izz>  2.4376760859e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://003_cracker_box/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://003_cracker_box/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="033_spatula_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  6.7134293000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -4.6581380000e-02 -7.8605620000e-02  1.3189110000e-02 -->
+        <pose> -4.6581380000e-02 -7.8605620000e-02  1.3189110000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  8.6238642746e-04 </ixx>
+          <ixy>  2.3504258427e-03 </ixy>
+          <ixz> -2.4207564084e-05 </ixz>
+          <iyy>  8.8789681899e-03 </iyy>
+          <iyz>  6.9654044022e-06 </iyz>
+          <izz>  9.6515909447e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://033_spatula_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://033_spatula_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

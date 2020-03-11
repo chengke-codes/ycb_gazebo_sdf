@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="030_fork">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.8993456000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.1834000000e-03  2.1632000000e-03  3.9661660000e-02 -->
+        <pose> -1.1834000000e-03  2.1632000000e-03  3.9661660000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  4.7585375194e-04 </ixx>
+          <ixy> -8.9290753615e-07 </ixy>
+          <ixz>  1.6082781354e-05 </ixz>
+          <iyy>  4.7055231023e-04 </iyy>
+          <iyz>  1.0203961828e-05 </iyz>
+          <izz>  4.1062137401e-05 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://030_fork/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://030_fork/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

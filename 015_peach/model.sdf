@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="015_peach">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.6760841400e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.3175580000e-02 -2.1917000000e-04  2.9026870000e-02 -->
+        <pose> -1.3175580000e-02 -2.1917000000e-04  2.9026870000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  4.6010816199e-04 </ixx>
+          <ixy> -3.7989047495e-05 </ixy>
+          <ixz>  3.5192212964e-06 </ixz>
+          <iyy>  4.4087150899e-04 </iyy>
+          <iyz> -2.3917969894e-06 </iyz>
+          <izz>  5.5110417070e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://015_peach/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://015_peach/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

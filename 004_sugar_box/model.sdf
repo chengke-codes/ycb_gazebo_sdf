@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="004_sugar_box">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  6.5781756600e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -8.0704100000e-03  1.1393800000e-03  8.7256430000e-02 -->
+        <pose> -8.0704100000e-03  1.1393800000e-03  8.7256430000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  2.7383251109e-03 </ixx>
+          <ixy> -2.6285237737e-04 </ixy>
+          <ixz> -7.7177007158e-06 </ixz>
+          <iyy>  2.8868934443e-03 </iyy>
+          <iyz>  8.9704507830e-06 </iyz>
+          <izz>  8.2629990121e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://004_sugar_box/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://004_sugar_box/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

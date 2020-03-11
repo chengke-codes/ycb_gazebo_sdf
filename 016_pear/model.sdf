@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="016_pear">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.0352964800e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.7230300000e-03  3.2448000000e-03  4.4083030000e-02 -->
+        <pose> -1.7230300000e-03  3.2448000000e-03  4.4083030000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  6.2606458741e-04 </ixx>
+          <ixy> -1.2686790477e-06 </ixy>
+          <ixz>  2.7035779082e-05 </ixz>
+          <iyy>  6.4076750872e-04 </iyy>
+          <iyz>  1.0578620958e-06 </iyz>
+          <izz>  4.7009251890e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://016_pear/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://016_pear/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="037_scissors_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  4.6802040000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.4591460000e-02  3.1621000000e-03  7.4006700000e-03 -->
+        <pose>  1.4591460000e-02  3.1621000000e-03  7.4006700000e-03 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  1.4098468721e-03 </ixx>
+          <ixy> -3.3596100298e-04 </ixy>
+          <ixz> -5.7905125503e-06 </ixz>
+          <iyy>  4.6953854148e-04 </iyy>
+          <iyz> -6.3143209142e-06 </iyz>
+          <izz>  1.8576432074e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://037_scissors_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://037_scissors_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

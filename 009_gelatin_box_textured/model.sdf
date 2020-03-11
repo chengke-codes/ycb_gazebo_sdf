@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="009_gelatin_box_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.7305596900e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -2.2675490000e-02 -7.8602000000e-03  1.3877970000e-02 -->
+        <pose> -2.2675490000e-02 -7.8602000000e-03  1.3877970000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  6.7629022146e-04 </ixx>
+          <ixy>  4.3994151973e-05 </ixy>
+          <ixz>  1.3515396282e-06 </ixz>
+          <iyy>  4.9688856731e-04 </iyy>
+          <iyz> -2.5952199314e-06 </iyz>
+          <izz>  1.0452014914e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://009_gelatin_box_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://009_gelatin_box_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

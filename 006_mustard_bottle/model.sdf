@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="006_mustard_bottle">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  7.1938397200e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  3.5623600000e-03 -8.4753000000e-03  8.3732080000e-02 -->
+        <pose>  3.5623600000e-03 -8.4753000000e-03  8.3732080000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  2.6070667463e-03 </ixx>
+          <ixy>  1.7011413260e-04 </ixy>
+          <ixz>  1.3399365951e-05 </ixz>
+          <iyy>  2.5086543660e-03 </iyy>
+          <iyz>  2.8744801114e-05 </iyz>
+          <izz>  7.8613519151e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://006_mustard_bottle/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://006_mustard_bottle/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
