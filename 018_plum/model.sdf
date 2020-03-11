@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="018_plum">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  9.4912369000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -2.1389000000e-04  1.1732980000e-02  2.8166980000e-02 -->
+        <pose> -2.1389000000e-04  1.1732980000e-02  2.8166980000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  3.1957624301e-04 </ixx>
+          <ixy>  9.3766609071e-06 </ixy>
+          <ixz>  5.7136978638e-06 </ixz>
+          <iyy>  3.0489161218e-04 </iyy>
+          <iyz> -8.6066126955e-07 </iyz>
+          <izz>  3.5163436601e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://018_plum/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://018_plum/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

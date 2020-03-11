@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="008_pudding_box_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  3.4177240000e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.5176500000e-03  1.8795880000e-02  1.8657700000e-02 -->
+        <pose>  1.5176500000e-03  1.8795880000e-02  1.8657700000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  8.1135081270e-04 </ixx>
+          <ixy> -1.4673426614e-04 </ixy>
+          <ixz> -1.9441713550e-05 </ixz>
+          <iyy>  1.0115733640e-03 </iyy>
+          <iyz> -6.1593750695e-06 </iyz>
+          <izz>  1.6130209321e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://008_pudding_box_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://008_pudding_box_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="013_apple_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.4659562700e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.3105800000e-03 -3.8612400000e-03  3.6336750000e-02 -->
+        <pose>  1.3105800000e-03 -3.8612400000e-03  3.6336750000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  6.1123228880e-04 </ixx>
+          <ixy>  1.0003968967e-06 </ixy>
+          <ixz>  1.7029632890e-06 </ixz>
+          <iyy>  6.2119367023e-04 </iyy>
+          <iyz> -2.1070187104e-06 </iyz>
+          <izz>  6.1846797875e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://013_apple_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://013_apple_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="026_sponge">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.2625460800e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  4.7174300000e-03  5.0721900000e-03  5.5720960000e-02 -->
+        <pose>  4.7174300000e-03  5.0721900000e-03  5.5720960000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  1.2044817762e-03 </ixx>
+          <ixy> -2.6645103520e-05 </ixy>
+          <ixz> -8.3934266383e-05 </ixz>
+          <iyy>  8.7431852943e-04 </iyy>
+          <iyz>  7.4828191617e-06 </iyz>
+          <izz>  4.0604475046e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://026_sponge/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://026_sponge/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

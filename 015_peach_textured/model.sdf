@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="015_peach_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.1721417200e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.5047330000e-02  6.7839900000e-03  2.8259590000e-02 -->
+        <pose> -1.5047330000e-02  6.7839900000e-03  2.8259590000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  3.7270321886e-04 </ixx>
+          <ixy> -1.6809696015e-05 </ixy>
+          <ixz>  4.0343969669e-06 </ixz>
+          <iyy>  3.6199958739e-04 </iyy>
+          <iyz> -4.8610316507e-06 </iyz>
+          <izz>  3.8547276092e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://015_peach_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://015_peach_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

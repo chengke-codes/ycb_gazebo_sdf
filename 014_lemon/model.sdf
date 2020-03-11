@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="014_lemon">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.1016581000e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.4170500000e-03  7.5734400000e-03  2.9930500000e-02 -->
+        <pose>  1.4170500000e-03  7.5734400000e-03  2.9930500000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  3.5110982164e-04 </ixx>
+          <ixy> -2.8273418041e-05 </ixy>
+          <ixz> -2.3490863454e-06 </ixz>
+          <iyy>  3.3415977425e-04 </iyy>
+          <iyz> -4.5884807637e-06 </iyz>
+          <izz>  4.0146003374e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://014_lemon/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://014_lemon/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

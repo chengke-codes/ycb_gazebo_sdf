@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="025_mug_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.3812199400e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.8858540000e-02  1.6572700000e-02  2.6898620000e-02 -->
+        <pose> -1.8858540000e-02  1.6572700000e-02  2.6898620000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  8.6178178184e-04 </ixx>
+          <ixy>  5.4463701125e-06 </ixy>
+          <ixz> -2.4591961799e-05 </ixz>
+          <iyy>  9.7948619537e-04 </iyy>
+          <iyz> -2.1269889139e-05 </iyz>
+          <izz>  1.2482498218e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://025_mug_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://025_mug_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

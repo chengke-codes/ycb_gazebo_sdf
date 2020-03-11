@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="021_bleach_cleanser">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.1362042240e-03 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.3586230000e-02  2.4700300000e-03  1.0601849000e-01 -->
+        <pose> -1.3586230000e-02  2.4700300000e-03  1.0601849000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  4.5333640159e-03 </ixx>
+          <ixy>  1.4181848843e-04 </ixy>
+          <ixz>  7.2448530961e-05 </ixz>
+          <iyy>  4.3930578958e-03 </iyy>
+          <iyz> -2.2362284899e-04 </iyz>
+          <izz>  8.8588268820e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://021_bleach_cleanser/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://021_bleach_cleanser/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

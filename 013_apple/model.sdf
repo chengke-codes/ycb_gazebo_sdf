@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="013_apple">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.7135464500e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -7.2543700000e-03  3.5729300000e-03  3.9566580000e-02 -->
+        <pose> -7.2543700000e-03  3.5729300000e-03  3.9566580000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  6.4052374781e-04 </ixx>
+          <ixy> -1.5614293243e-06 </ixy>
+          <ixz>  9.8174497805e-06 </ixz>
+          <iyy>  6.3451934976e-04 </iyy>
+          <iyz>  1.5094011013e-07 </iyz>
+          <izz>  6.7566765478e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://013_apple/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://013_apple/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

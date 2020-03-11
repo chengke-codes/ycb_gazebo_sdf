@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="019_pitcher_base">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  2.6285012210e-03 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -5.3725800000e-03  1.9187750000e-02  1.2435016000e-01 -->
+        <pose> -5.3725800000e-03  1.9187750000e-02  1.2435016000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  5.1784632118e-03 </ixx>
+          <ixy> -3.3917992652e-05 </ixy>
+          <ixz> -1.5249124550e-05 </ixz>
+          <iyy>  5.1855805044e-03 </iyy>
+          <iyz> -1.0999180205e-05 </iyz>
+          <izz>  1.8750793791e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://019_pitcher_base/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://019_pitcher_base/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

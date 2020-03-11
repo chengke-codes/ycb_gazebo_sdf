@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="042_adjustable_wrench">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+            Mesh is not 'watertight', thus no information on volume, center of mass, or inertia is available.
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://042_adjustable_wrench/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://042_adjustable_wrench/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

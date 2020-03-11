@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="022_windex_bottle_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  7.3543237300e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  1.3942560000e-02  8.4300300000e-03  1.0236861000e-01 -->
+        <pose>  1.3942560000e-02  8.4300300000e-03  1.0236861000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  4.8806811738e-03 </ixx>
+          <ixy> -4.3381549917e-05 </ixy>
+          <ixz>  1.0491788753e-05 </ixz>
+          <iyy>  4.7550562009e-03 </iyy>
+          <iyz>  1.0049193633e-04 </iyz>
+          <izz>  7.1584357764e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://022_windex_bottle_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://022_windex_bottle_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

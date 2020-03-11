@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="036_wood_block_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.5785417480e-03 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass:  2.3373040000e-02 -1.0273640000e-02  1.0276922000e-01 -->
+        <pose>  2.3373040000e-02 -1.0273640000e-02  1.0276922000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  4.1189444558e-03 </ixx>
+          <ixy>  7.9067271523e-06 </ixy>
+          <ixz>  2.0826858169e-05 </ixz>
+          <iyy>  4.1344336823e-03 </iyy>
+          <iyz>  1.2557961565e-05 </iyz>
+          <izz>  1.2821025141e-03 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://036_wood_block_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://036_wood_block_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

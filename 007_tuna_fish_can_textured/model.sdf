@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="007_tuna_fish_can_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  1.5261897300e-04 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -2.5996330000e-02 -2.2140360000e-02  1.2989510000e-02 -->
+        <pose> -2.5996330000e-02 -2.2140360000e-02  1.2989510000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  5.2105506043e-04 </ixx>
+          <ixy>  1.4112858694e-07 </ixy>
+          <ixz>  8.0185967442e-08 </ixz>
+          <iyy>  5.2160882776e-04 </iyy>
+          <iyz>  1.7259322011e-08 </iyz>
+          <izz>  9.1347272400e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://007_tuna_fish_can_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://007_tuna_fish_can_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="001_chips_can">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume: -1.0865159910e-03 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -5.9903000000e-03  1.1081010000e-02  1.2244101000e-01 -->
+        <pose> -5.9903000000e-03  1.1081010000e-02  1.2244101000e-01 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  5.1081971518e-03 </ixx>
+          <ixy> -6.8856263156e-06 </ixy>
+          <ixz>  1.4589027342e-05 </ixz>
+          <iyy>  5.1297468231e-03 </iyy>
+          <iyz>  2.3121141988e-05 </iyz>
+          <izz>  7.1593511522e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://001_chips_can/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://001_chips_can/nontextured.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="012_strawberry_textured">
+    <pose>0 0 0  0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <!-- Volume:  4.8323563000e-05 -->
+        <mass> 1.0 </mass>
+        <!-- Center of mass: -1.4938700000e-03  1.5432680000e-02  2.1114500000e-02 -->
+        <pose> -1.4938700000e-03  1.5432680000e-02  2.1114500000e-02 0 0 0 </pose>
+        <!-- Inertia matrix -->
+        <inertia>
+          <ixx>  2.0727670681e-04 </ixx>
+          <ixy> -2.0235465667e-05 </ixy>
+          <ixz> -5.3869165235e-07 </ixz>
+          <iyy>  2.1151061440e-04 </iyy>
+          <iyz> -6.1889165747e-06 </iyz>
+          <izz>  2.0897986972e-04 </izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://012_strawberry_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://012_strawberry_textured/textured.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
