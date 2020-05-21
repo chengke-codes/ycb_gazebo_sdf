@@ -6,7 +6,15 @@ I created SDF models of most YCB objects to make them available in Gazebo. All m
 
 ## How to use?
 
-Just clone this repo in somewhere, then copy all directories to `~/.gazebo/models`. Restart your Gazebo and enjoy.
+### Independent workspace (Recommended)
+Clone this repo in somewhere, then add following lines to your `~/.bashrc`
+```
+source /usr/share/gazebo/setup.sh
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:<your_clone_path>
+```
+
+### Mixed with your models
+You can clone this repo in somewhere, then copy all directories to `~/.gazebo/models`
 
 ## Change Log
 ### 2020-05-21
