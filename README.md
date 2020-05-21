@@ -7,3 +7,7 @@ I created SDF models of most YCB objects to make them available in Gazebo. All m
 ## How to use?
 
 Just clone this repo in somewhere, then copy all directories to `~/.gazebo/models`. Restart your Gazebo and enjoy.
+
+## Change Log
+### 2020-05-21
+1. Adjust friction to reduce model drift and shaking.
