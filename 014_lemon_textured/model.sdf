@@ -49,10 +49,8 @@
               <kp>1000000.0</kp>
               <kd>1.0</kd>
               <max_vel>0.0</max_vel>
-              <max_depth>0.001</max_depth>
             </ode>
           </contact>
-          <bounce/>
         </surface>
       </collision>
     </link>
